@@ -1,13 +1,13 @@
 # Get the project_path
-from config_manager import PROJECT_PATH
+from config_manager import FOLDER_PATH
 
 # READ only folders in Project Directory
 from os import listdir
 from os.path import isdir, join
 projects = [
     name 
-    for name in listdir(PROJECT_PATH) 
-        if isdir(join(PROJECT_PATH, name))
+    for name in listdir(FOLDER_PATH) 
+        if isdir(join(FOLDER_PATH, name))
 ]
 
 # Setup Fuzzy Search
@@ -35,9 +35,3 @@ def search_projects(search_str=""):
     
     near_matches.sort(reverse=True, key=lambda matches: matches[1])
     return [matches[0] for matches in near_matches]
-
-
-# print(near_matches_df)
-# print(near_matches)
-# near_matches.sort(reverse=True, key=lambda matches: matches[1])
-print(search_projects("home"))
