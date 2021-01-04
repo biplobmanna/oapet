@@ -4,6 +4,6 @@ configparser = configparser.ConfigParser()
 config_file_path = r'.config'
 configparser.read(config_file_path)
 
-PROJECT_PATH = configparser.get('FOLDER_PATH', 'PROJECT_PATH')
-
-# print("PROJECT_PATH = " + PROJECT_PATH)
+# GLOBAL CONSTANTS to be accessed everywhere
+FOLDER_PATH = configparser.get('GENERAL', 'FOLDER_PATH')
+EDITOR = configparser.get('GENERAL', 'EDITOR')
