@@ -23,6 +23,12 @@ search_str = arg_list_str.strip()
 # Perform Fuzzy Search & get the list of matches
 search_matches = search.search_projects(search_str)
 
+if not search_matches:
+    # Handle No Matches - by displaying all
+    print("Oops! Seems like there ain't a match...")
+    print("Here you go lad, take everything then...")
+    search_matches = search.search_projects("")
+
 # Show the list & get choice
 choice = prompt.choose_options_prompt(search_matches)
 
