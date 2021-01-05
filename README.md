@@ -15,11 +15,11 @@ Right now, there is only support for one editor, and one project path.
 
 
 ### Usage
-* Call the `main.py` from anywhere using python3
+* Call the `main.py` from anywhere using **python3**<br>
 	`python3 /path/to/app/folder/main.py <search_term_here>`
-* Better usage: Create an alias, eg: 
+* Better usage: Create an alias, eg:<br> 
 	`alias op='/bin/python3 /path/to/app/folder/main.py'`
-	use: `op <search_term_here>`
+	<br>use: `op <search_term_here>`
 
 ### Future Scope
 * Support for multiple editors
