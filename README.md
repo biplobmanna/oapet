@@ -1,4 +1,4 @@
-## Open Any ProjEcT
+## Open Any ProjEcT (OAPET)
 Open my web projects from anywhere, and in my favourite editor. 
 Born from the need to:
 * practice some python
