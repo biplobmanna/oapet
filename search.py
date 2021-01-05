@@ -1,3 +1,9 @@
+# Bring packages onto path
+from sys import path as syspath
+from pathlib import Path
+syspath.append(Path(__file__).parent.absolute())
+
+
 # Get the project_path
 from config_manager import FOLDER_PATH
 

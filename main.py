@@ -1,3 +1,8 @@
+# Bring packages onto path
+from sys import path as syspath
+from pathlib import Path
+syspath.append(Path(__file__).parent.absolute())
+
 import prompt
 import search
 import open_editor

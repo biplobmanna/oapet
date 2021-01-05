@@ -1,3 +1,8 @@
+# Bring packages onto path
+from sys import path as syspath
+from pathlib import Path
+syspath.append(Path(__file__).parent.absolute())
+
 # Import the search function to get the list of all the files
 from search import search_projects
 
