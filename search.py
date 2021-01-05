@@ -29,7 +29,7 @@ def search_projects(search_str=""):
 
     # iterate through all the folders & apply fuzzy search
     for project in projects:
-        matched_result = fnm(search_str, project, max_l_dist=2)
+        matched_result = fnm(search_str, project, max_l_dist=1)
         if matched_result:
             near_matches.append([project, len(matched_result[0].matched)])
     
