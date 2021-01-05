@@ -1,5 +1,34 @@
-# Basically a script to open any project file 
-* should have search function
-* should have fuzzy search
-* should have options to choose any of the available options
-* should have a config file to alter parameters
+## Open Any ProjEcT
+Open my web projects from anywhere, and in my favourite editor. 
+Born from the need to:
+* practice some python
+* automate the boring parts
+This is the first in a series of automation to ease the boring work!
+
+### Configuration
+Make changes to .config as per your need. 
+Right now, there is only support for one editor, and one project path. 
+
+### Dependencies
+* python3
+* fuzzysearch -- install using `pip3 install fuzzysearch`
+
+
+### Usage
+* Call the `main.py` from anywhere using python3
+	`python3 /path/to/app/folder/main.py <search_term_here>`
+* Better usage: Create an alias, eg: 
+	`alias op='/bin/python3 /path/to/app/folder/main.py'`
+	use: `op <search_term_here>`
+
+### Future Scope
+* Support for multiple editors
+* Better Fuzzy Search implementation
+* Interactive Search
+* Basically, make it more like using FZF, but for projects
+
+### When will I get around to it?
+Well, gee, who knows! Let's see. Maybe soon, maybe never, or maybe someday when fancy strikes me!
+
+### License
+None whatsoever. Do your worst, but at your own risk. I am not liable for anything you do! Never. 
